@@ -1,0 +1,77 @@
+
+<script>
+(function () {
+  document.title = "MDigitalAfrika — Bold Swahilian Creativity";
+
+  const nav = document.querySelector(".navlinks");
+  if (nav) {
+    nav.innerHTML = `
+      <a href="#work">Work / Kazi</a>
+      <a href="#about">About / Kuhusu</a>
+      <a href="#services">Services / Huduma</a>
+      <a class="contact" href="#contact">Wasiliana ↗</a>
+    `;
+  }
+
+  const hero = document.querySelector(".hero");
+  if (hero) {
+    hero.querySelector(".lead").textContent =
+      "MDigitalAfrika helps brands communicate through bold visual design, branding, motion graphics and 3D. / MDigitalAfrika husaidia chapa kuwasiliana kupitia ubunifu wa picha, utambulisho wa chapa, motion graphics na 3D.";
+  }
+
+  const about = document.querySelector("#about .about-copy");
+  if (about) {
+    about.innerHTML = `
+      Mfaume Ally — Graphic Designer & Creative.
+      <br><br>
+      MDigitalAfrika helps brands communicate through bold visual
+      design, branding, motion graphics and 3D.
+      <br><br>
+      MDigitalAfrika husaidia chapa kuwasiliana kupitia ubunifu
+      wa picha wenye mvuto, utambulisho wa chapa, motion graphics
+      na 3D.
+    `;
+  }
+
+  const services = document.querySelector("#services .services");
+  if (services) {
+    const items = [
+      ["Graphic Design", "Ubunifu wa Picha"],
+      ["Brand Identity", "Utambulisho wa Chapa"],
+      ["Motion Graphics & 3D", "Motion Graphics na 3D"],
+      ["Digital Marketing", "Masoko ya Kidijitali"],
+      ["Voice-over Ads", "Matangazo ya Sauti"],
+      ["Graphic Design Training", "Mafunzo ya Graphic Design"]
+    ];
+
+    services.innerHTML = items.map((item, i) => `
+      <div class="service">
+        <span class="num">0${i + 1}</span>
+        <b>${item[0]} / ${item[1]}</b>
+      </div>
+    `).join("");
+  }
+
+  const cta = document.querySelector(".cta");
+  if (cta) {
+    cta.innerHTML = `
+      <div>
+        <h2>Let's work together / Tushirikiane</h2>
+        <p>Mfaume Ally — Graphic Designer & Creative</p>
+      </div>
+      <div class="actions">
+        <a class="btn" href="https://wa.me/255626902687">
+          WhatsApp: 0626902687
+        </a>
+        <a class="btn" href="mailto:hello@mdigitalafrika.com">
+          hello@mdigitalafrika.com
+        </a>
+        <a class="btn"
+           href="https://www.instagram.com/mdigitalafrika/">
+          Instagram @mdigitalafrika
+        </a>
+      </div>
+    `;
+  }
+})();
+</script>
