@@ -1,0 +1,172 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="MDigitalAfrika — Bold Swahilian Creativity. Graphic design, branding, motion graphics and 3D.">
+  <title>MDigitalAfrika | Creative Studio</title>
+  <style>
+    :root {
+      --bg: #15161a;
+      --card: #202127;
+      --text: #f7f5f5;
+      --muted: #b5b4be;
+      --maroon: #8b2946;
+      --blue: #4775e8;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+    }
+    a { color: inherit; text-decoration: none; }
+    .wrap { width: min(1100px, 90%); margin: auto; }
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 24px 0;
+      border-bottom: 1px solid #35353e;
+    }
+    .logo { font-size: 21px; font-weight: 900; letter-spacing: -1px; }
+    .logo span { color: #a83a5b; }
+    .tagline { display: block; font-size: 9px; letter-spacing: 2px; color: var(--muted); }
+    nav { display: flex; gap: 20px; font-size: 13px; }
+    nav a:hover { color: #86a5ff; }
+    .hero {
+      padding: 90px 0 75px;
+      display: grid;
+      grid-template-columns: 1.2fr .8fr;
+      gap: 45px;
+      align-items: center;
+    }
+    .eyebrow { color: #91aaff; text-transform: uppercase; letter-spacing: 3px; font-size: 11px; }
+    h1 { font-size: clamp(44px, 7vw, 76px); line-height: 1.03; letter-spacing: -4px; margin: 18px 0; }
+    h1 span { color: #d65b7e; }
+    .lead { color: var(--muted); max-width: 520px; }
+    .button {
+      display: inline-block; padding: 13px 20px; border-radius: 6px;
+      background: var(--maroon); color: white; font-weight: bold; margin: 12px 8px 0 0;
+    }
+    .button.secondary { background: transparent; border: 1px solid #555561; }
+    .art {
+      min-height: 330px; border-radius: 20px; padding: 28px;
+      display: flex; align-items: end; overflow: hidden;
+      background: radial-gradient(circle at 75% 20%, #4775e8, transparent 35%),
+        radial-gradient(circle at 20% 80%, #8b2946, transparent 45%), #252630;
+    }
+    .art div { font-size: 32px; font-weight: 900; line-height: 1.1; }
+    section { padding: 45px 0 65px; }
+    .label { color: #91aaff; font-size: 11px; letter-spacing: 3px; text-transform: uppercase; }
+    h2 { font-size: clamp(29px, 4vw, 43px); letter-spacing: -1.5px; margin: 8px 0 25px; }
+    .projects { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+    .project { background: var(--card); border: 1px solid #35353e; border-radius: 12px; overflow: hidden; }
+    .visual { height: 190px; display: grid; place-items: center; text-align: center; padding: 20px; font-size: 27px; font-weight: 900; }
+    .v1 { background: linear-gradient(135deg, #812847, #25202c); }
+    .v2 { background: linear-gradient(135deg, #24458e, #161821); }
+    .v3 { background: linear-gradient(135deg, #8a6531, #29201d); }
+    .v4 { background: linear-gradient(135deg, #526c55, #1c2823); }
+    .v5 { background: linear-gradient(135deg, #9c4969, #30202c); }
+    .v6 { background: linear-gradient(135deg, #444654, #17181e); }
+    .info { padding: 18px; }
+    .info h3 { margin: 0 0 5px; }
+    .info p, .about p { color: var(--muted); font-size: 14px; }
+    .about { background: var(--card); padding: 28px; border-radius: 12px; }
+    .services { display: grid; grid-template-columns: repeat(2, 1fr); gap: 15px; }
+    .service { padding: 20px; background: var(--card); border-radius: 10px; border: 1px solid #35353e; }
+    .service h3 { margin: 0; }
+    .contact { background: linear-gradient(120deg, #75243e, #273b70); padding: 35px; border-radius: 15px; }
+    footer { padding: 28px 0; border-top: 1px solid #35353e; color: var(--muted); font-size: 12px; }
+    @media (max-width: 700px) {
+      header { align-items: flex-start; flex-direction: column; }
+      nav { flex-wrap: wrap; gap: 14px; }
+      .hero { grid-template-columns: 1fr; padding-top: 55px; }
+      .projects { grid-template-columns: 1fr; }
+      .services { grid-template-columns: 1fr; }
+      h1 { letter-spacing: -2px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="wrap">
+    <a class="logo" href="#home">M<span>Digital</span>Afrika
+      <span class="tagline">BOLD SWAHILIAN CREATIVITY</span>
+    </a>
+    <nav>
+      <a href="#work">Portfolio</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main class="wrap" id="home">
+    <section class="hero">
+      <div>
+        <div class="eyebrow">Creative studio · Tanzania</div>
+        <h1>Ideas made <span>bold.</span><br>Design made clear.</h1>
+        <p class="lead">We transform ideas into memorable visual experiences through graphic design, brand identity, motion graphics and 3D creativity.</p>
+        <a class="button" href="#work">Explore our work ↘</a>
+        <a class="button secondary" href="#contact">Let's talk ↗</a>
+      </div>
+      <div class="art">
+        <div>CREATE.<br>INSPIRE.<br><span>STAND OUT.</span></div>
+      </div>
+    </section>
+
+    <section id="work">
+      <div class="label">Selected work</div>
+      <h2>Our creative portfolio.</h2>
+      <div class="projects">
+        <article class="project"><div class="visual v1">BRAND<br>IDENTITY</div><div class="info"><h3>Brand Identity</h3><p>Logos, brand systems and visual identity concepts.</p></div></article>
+        <article class="project"><div class="visual v2">CAMPAIGN<br>DESIGN</div><div class="info"><h3>Campaign Design</h3><p>Creative posters, flyers and advertising visuals.</p></div></article>
+        <article class="project"><div class="visual v3">PRODUCT<br>VISUALS</div><div class="info"><h3>Product Design</h3><p>Packaging, product advertisements and mockups.</p></div></article>
+        <article class="project"><div class="visual v4">DIGITAL<br>DESIGN</div><div class="info"><h3>Digital Content</h3><p>Social media graphics and digital communication.</p></div></article>
+        <article class="project"><div class="visual v5">CREATIVE<br>STORIES</div><div class="info"><h3>Social Campaigns</h3><p>Visual content designed to engage audiences.</p></div></article>
+        <article class="project"><div class="visual v6">MOTION<br>+ 3D</div><div class="info"><h3>Motion & 3D</h3><p>Logo animation, 3D visuals and product adverts.</p></div></article>
+      </div>
+      <p class="lead">Note: These are temporary placeholders. Add your actual portfolio projects before publishing.</p>
+    </section>
+
+    <section id="about">
+      <div class="label">About us</div>
+      <h2>Creativity with purpose.</h2>
+      <div class="about">
+        <h3>Bold Swahilian Creativity.</h3>
+        <p>MDigitalAfrika is a creative brand focused on helping businesses communicate clearly through impactful design. Our approach combines creativity, thoughtful visual storytelling and a strong understanding of brands.</p>
+      </div>
+    </section>
+
+    <section id="services">
+      <div class="label">What we do</div>
+      <h2>Creative services.</h2>
+      <div class="services">
+        <div class="service"><h3>01. Graphic Design</h3><p>Posters, flyers, publications and advertising artwork.</p></div>
+        <div class="service"><h3>02. Brand Identity</h3><p>Logo design, visual identity and brand guidelines.</p></div>
+        <div class="service"><h3>03. Motion & 3D</h3><p>Logo animation, 3D modelling and product visuals.</p></div>
+        <div class="service"><h3>04. Digital Marketing</h3><p>Social media content and creative campaigns.</p></div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="contact">
+        <div class="label">Let's collaborate</div>
+        <h2>Have a bold idea?</h2>
+        <p>Let's create something people remember.</p>
+        <a class="button" href="https://www.instagram.com/mdigitalafrika/" target="_blank" rel="noopener">Contact us on Instagram ↗</a>
+      </div>
+    </section>
+  </main>
+
+  <footer><div class="wrap">© <span id="year"></span> MDigitalAfrika · Bold Swahilian Creativity</div></footer>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
